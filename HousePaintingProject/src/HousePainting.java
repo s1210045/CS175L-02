@@ -6,20 +6,23 @@ public class HousePainting {
 	{
 	Scanner in = new Scanner(System. in) ;
 	
-//inputs of house, window, door
+//inputs of Square Foot
 	System.out.println ("Enter cost per square foot: ");
 	double SqFtcost  = in.nextInt();
+//input of house
 	System.out.println ("Enter length of the house: ");
 	int length = in.nextInt();
 	System.out.println ("Enter width of the house: ");
 	int width = in.nextInt();
 	System.out.println ("Enter height of the house: ");
+//input of windows
 	int height = in.nextInt();	
 	System.out.println ("Enter number of Windows: ");
 	int numWindows = in.nextInt();
 	System.out.println ("Enter length of windows: ");
 	int lengthWindow = in.nextInt();
 	System.out.println ("Enter width of windows: ");
+//input of doors
 	int widthWindow = in.nextInt();	
 	System.out.println ("Enter number of doors: ");
 	int numDoors = in.nextInt();
@@ -29,15 +32,22 @@ public class HousePainting {
 	int widthDoor = in.nextInt();
 
 //Math for the output
+	
 	int windowSqFt = (widthWindow*lengthWindow*numWindows);
+	
 	int doorSqFt = (widthDoor * lengthDoor*numDoors);
+	
 	int peakSideSqFt = (int) (width * length + (.5 * (length * (height - width))))*2;
+	
 	int normalSideSqFt = (length * width)*2;	
+	
 	int totalSqFt = (int) normalSideSqFt + peakSideSqFt - doorSqFt - windowSqFt;
+	
 	double CostToPaint = (int) (totalSqFt * SqFtcost);
 
 //Output of the system
 	System.out.println("Your total paintable surface area is: " + totalSqFt);
+	
 	System.out.println("Your estimate is " + CostToPaint + " dollars.");
 }
 	}

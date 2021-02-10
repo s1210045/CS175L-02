@@ -31,7 +31,7 @@ public class HousePainting {
 	System.out.println ("Enter width of door: ");
 	int widthDoor = in.nextInt();
 
-//Math for the output
+//math for the output 
 	
 	int windowSqFt = (widthWindow*lengthWindow*numWindows);
 	
@@ -45,9 +45,9 @@ public class HousePainting {
 	
 	double CostToPaint = (int) (totalSqFt * SqFtcost);
 
-//Output of the system
+//Output of the system for total
 	System.out.println("Your total paintable surface area is: " + totalSqFt);
 	
-	System.out.println("Your estimate is " + CostToPaint + " dollars.");
+	System.out.println("Your estimate is " + CostToPaint + " dollars");
 }
 	}

@@ -32,8 +32,8 @@ public class Housepaintinglab {
 	int windowSqFt = (widthWindow*lengthWindow*numWindows);
 	int doorSqFt = (widthDoor * lengthDoor*numDoors);
 	int peakSideSqFt = (int) (width * length + (.5 * (length * (height - width))))*2;
-	int normalSide = (length * width)*2;	
-	int totalSqFt = (int) normalSide + peakSideSqFt - doorSqFt - windowSqFt;
+	int normalSideSqFt = (length * width)*2;	
+	int totalSqFt = (int) normalSideSqFt + peakSideSqFt - doorSqFt - windowSqFt;
 	double CostToPaint = (int) (totalSqFt * SqFtcost);
 
 //Output of the system

@@ -1,3 +1,5 @@
+package mailMerge;
+import java.util.Scanner;
 public class mailMerge {
 
 	public static void main(String[] args) {

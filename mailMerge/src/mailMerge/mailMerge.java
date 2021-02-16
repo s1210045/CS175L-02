@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class mailMerge {
 
 	public static void main(String[] args) {
@@ -32,25 +30,9 @@ public class mailMerge {
 		replaceText2 = replaceText2.replace("<street>",street);
 		replaceText3 = replaceText3.replace("<yORn>",address);
 
-		//Final output
+		
         System.out.println(replaceText1);
         System.out.println(replaceText2);
         System.out.println(replaceText3);
-       
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		     
-
-
-}
+	}
 }

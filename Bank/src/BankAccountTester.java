@@ -6,7 +6,7 @@ Scanner in = new Scanner(System.in);
 
 
 
-{
+
 
 
 
@@ -41,7 +41,7 @@ Scanner in = new Scanner(System.in);
 
 		
 				}
-}
+
 }
 
 
